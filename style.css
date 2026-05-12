@@ -691,3 +691,50 @@ h1 {
     line-height: 1.9;
   }
 }
+/* Rei detail page visual adjustment */
+
+.character-hero {
+  padding: 48px clamp(20px, 5vw, 72px) 72px;
+}
+
+.character-hero-visual {
+  width: min(100%, 1320px);
+  margin: 0 auto;
+}
+
+.character-hero-visual img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.character-hero-copy {
+  max-width: 860px;
+  margin: 42px auto 0;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.character-hero-copy h1 {
+  margin: 10px 0 6px;
+  font-size: clamp(2.2rem, 4vw, 4.2rem);
+  line-height: 1.2;
+  letter-spacing: 0.12em;
+  text-align: center;
+}
+
+.character-hero-copy .roman {
+  text-align: center;
+}
+
+.character-catch {
+  margin-top: 18px;
+  text-align: center;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  letter-spacing: 0.08em;
+}
+
+.character-section {
+  max-width: 1180px;
+  margin: 0 auto;
+}
