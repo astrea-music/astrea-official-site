@@ -405,3 +405,26 @@ h1 {
     grid-column: 1 / -1;
   }
 }
+@media (max-width: 900px) {
+  .hero {
+    padding: 24px 16px 56px;
+  }
+
+  .hero-copy {
+    position: static;
+    transform: none;
+    max-width: none;
+    padding: 28px 20px 32px;
+    background: rgba(255, 255, 255, 0.88);
+  }
+
+  .hero-copy h1 {
+    font-size: 34px;
+    line-height: 1.4;
+  }
+
+  .hero-text {
+    font-size: 14px;
+    line-height: 1.9;
+  }
+}
