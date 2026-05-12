@@ -1,0 +1,23 @@
+# ASTREA Official Site
+
+ASTREA公式ホームページの静的HTML/CSSサイトです。
+
+## ファイル構成
+
+- `index.html`：トップページ
+- `style.css`：デザイン指定
+- `images/`：画像フォルダ
+
+## 画像ファイル名
+
+以下の名前で画像を `images` フォルダに入れると反映されます。
+
+- `logo.png`
+- `rei-main.png`
+- `rei-card.png`
+- `soleil-card.png`
+- `mio-card.png`
+
+## 公開方法
+
+GitHubにアップロード後、GitHub PagesまたはNetlifyで公開できます。

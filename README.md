@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASTREA Official Site</title>
+  <meta name="description" content="ASTREA公式ホームページ。AIと人が共創する、物語性を持つ音楽プロジェクト。" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="ASTREA top">
+      <img src="images/logo.png" alt="ASTREA logo" class="brand-logo" />
+      <span class="brand-text">ASTREA</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#artists">Artists</a>
+      <a href="#music">Music</a>
+      <a href="#if-world">IF World</a>
+      <a href="#links">Links</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-visual">
+        <img src="images/rei-main.png" alt="月島レイ メインアーティストビジュアル" />
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow">ASTREA / MUSIC & WORLDBUILDING PROJECT</p>
+        <h1>人の内に残る熱を、<br />歌によって星の光へ。</h1>
+        <p class="lead">
+          AIと人が共創する、物語性を持つ音楽プロジェクト。
+          キャラクター、楽曲、都市、IF世界をひとつの星図として編んでいく。
+        </p>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="section-heading">
+        <p class="section-number">01</p>
+        <h2>About ASTREA</h2>
+      </div>
+      <div class="text-panel">
+        <p>
+          ASTREAは、音楽・キャラクター・世界観を横断して展開する創作プロジェクトです。
+          月島レイ、明乃ソレイユ、木乃瀬ミオを中心に、静かな熱、朝の光、木漏れ日の温度を
+          それぞれの歌と物語として描いていきます。
+        </p>
+      </div>
+    </section>
+
+    <section id="artists" class="section">
+      <div class="section-heading">
+        <p class="section-number">02</p>
+        <h2>Artists</h2>
+      </div>
+
+      <div class="artist-grid">
+        <article class="artist-card">
+          <img src="images/rei-card.png" alt="月島レイ" />
+          <div class="artist-body">
+            <p class="artist-role">ASTREA / 1st Artist</p>
+            <h3>月島レイ</h3>
+            <p class="roman">Rei Tsukishima</p>
+            <p>宿る熱を、今へ響かせる。</p>
+            <a class="text-link" href="#rei-detail">詳細を見る</a>
+          </div>
+        </article>
+
+        <article class="artist-card">
+          <img src="images/soleil-card.png" alt="明乃ソレイユ" />
+          <div class="artist-body">
+            <p class="artist-role">ASTREA / 2nd Artist</p>
+            <h3>明乃ソレイユ</h3>
+            <p class="roman">Akino Soleil</p>
+            <p>目覚めた心に小さな熱をくべ、今日を軽やかに開いていく。</p>
+            <a class="text-link" href="#soleil-detail">詳細を見る</a>
+          </div>
+        </article>
+
+        <article class="artist-card">
+          <img src="images/mio-card.png" alt="木乃瀬ミオ" />
+          <div class="artist-body">
+            <p class="artist-role">ASTREA / 3rd Artist</p>
+            <h3>木乃瀬ミオ</h3>
+            <p class="roman">Kinose Mio</p>
+            <p>木漏れ日の中で、心と思考が静かな温度へほどけていく。</p>
+            <a class="text-link" href="#mio-detail">詳細を見る</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="music" class="section music-section">
+      <div class="section-heading">
+        <p class="section-number">03</p>
+        <h2>Music</h2>
+      </div>
+
+      <div class="music-list">
+        <a class="music-row" href="#" aria-label="Soleil">
+          <span class="music-title">Soleil</span>
+          <span class="music-artist">明乃ソレイユ</span>
+          <span class="arrow">→</span>
+        </a>
+        <a class="music-row" href="#" aria-label="Komorebi">
+          <span class="music-title">Komorebi</span>
+          <span class="music-artist">木乃瀬ミオ</span>
+          <span class="arrow">→</span>
+        </a>
+        <a class="music-row" href="#" aria-label="Dawn Ember">
+          <span class="music-title">Dawn Ember</span>
+          <span class="music-artist">月島レイ × 明乃ソレイユ</span>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="if-world" class="section if-world">
+      <div class="section-heading">
+        <p class="section-number">04</p>
+        <h2>IF World</h2>
+      </div>
+
+      <div class="if-panel">
+        <div>
+          <p class="eyebrow">ANOTHER POSSIBILITY</p>
+          <h3>もうひとつの星が照らす世界へ。</h3>
+          <p>
+            IF世界では、キャラクターの別の姿、選択から分岐したストーリー、
+            そして都市・術式・太陽のかけらなどの設定資料を整理していきます。
+          </p>
+        </div>
+        <a class="button" href="#settings">設定資料を見る</a>
+      </div>
+
+      <div class="if-grid">
+        <article>
+          <h4>IF世界の姿</h4>
+          <p>各キャラクターのIF世界での立場、衣装、役割を掲載。</p>
+        </article>
+        <article>
+          <h4>ストーリー</h4>
+          <p>分岐した世界で、彼女たちが何を選び、何を守るのかを整理。</p>
+        </article>
+        <article id="settings">
+          <h4>設定資料</h4>
+          <p>都市、太陽のかけら、AIパートナー、術式などの資料置き場。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section character-detail" id="rei-detail">
+      <div class="section-heading">
+        <p class="section-number">05</p>
+        <h2>Character Detail</h2>
+      </div>
+      <div class="detail-panel">
+        <div>
+          <p class="artist-role">ASTREA / 1st Artist</p>
+          <h3>月島レイ</h3>
+          <p class="roman">Rei Tsukishima</p>
+        </div>
+        <p>
+          夜の中でも歩き出す人を静かに支える存在。冷たく澄んだ声の奥に、
+          ほどけない熱と、前へ進むための意志を宿している。
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="links" class="site-footer">
+    <p class="footer-brand">ASTREA</p>
+    <div class="footer-links">
+      <a href="#">YouTube</a>
+      <a href="#">X</a>
+      <a href="#">Instagram</a>
+      <a href="mailto:your-email@example.com">Contact</a>
+    </div>
+    <p class="copyright">© ASTREA. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
