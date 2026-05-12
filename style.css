@@ -114,7 +114,7 @@ a {
   top: 50%;
   left: 8%;
   transform: translateY(-50%);
-  max-width: 520px;
+  max-width: 760px;
   color: #1f2340;
 }
 
@@ -128,14 +128,21 @@ a {
 
 .hero-copy h1 {
   margin: 0 0 24px;
-  font-size: 56px;
+  font-size: clamp(42px, 4.2vw, 64px);
   line-height: 1.25;
   font-weight: 500;
   color: #1d2344;
   white-space: nowrap;
+  letter-spacing: 0.08em;
 }
 
-@media (max-width: 900px) {
+.hero-text {
+  max-width: 660px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 2;
+  color: #5f6478;
+}
   .hero-copy h1 {
     font-size: 34px;
     line-height: 1.4;
@@ -388,10 +395,6 @@ h1 {
 
   .site-nav {
     flex-wrap: wrap;
-  }
-
-  .hero-visual img {
-    aspect-ratio: 4 / 3;
   }
 
   .artist-grid,
