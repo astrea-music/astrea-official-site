@@ -121,8 +121,7 @@ a {
 .hero-brand {
   margin: 0 0 18px;
   font-size: 14px;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
+  letter-spacing: 0.16em;
   color: #7b7f92;
 }
 
@@ -432,6 +431,8 @@ h1 {
   .hero-copy h1 {
     font-size: 34px;
     line-height: 1.4;
+    white-space: normal;
+    letter-spacing: 0.06em;
   }
 
   .hero-text {
