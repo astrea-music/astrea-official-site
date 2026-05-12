@@ -132,8 +132,16 @@ a {
   line-height: 1.25;
   font-weight: 500;
   color: #1d2344;
+  white-space: nowrap;
 }
 
+@media (max-width: 900px) {
+  .hero-copy h1 {
+    font-size: 34px;
+    line-height: 1.4;
+    white-space: normal;
+  }
+}
 .hero-text {
   margin: 0;
   font-size: 16px;
