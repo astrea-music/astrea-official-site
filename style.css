@@ -1354,17 +1354,6 @@ h1 {
   border: 1px solid rgba(181, 139, 59, 0.34);
 }
 
-/* 右側の星を見やすく */
-.character-page.rei-page .statement-panel::after,
-.character-page.rei-page .sound-panel::after,
-.character-page.rei-page .profile-grid::after {
-  right: -11px;
-  font-size: 22px;
-  color: rgba(181, 139, 59, 0.95);
-  text-shadow:
-    0 0 0 #fbfaf7,
-    0 0 8px rgba(181, 139, 59, 0.22);
-}
 
 /* Conceptの本文BOXを少し締める */
 .character-page.rei-page .statement-panel {
