@@ -1392,42 +1392,6 @@ h1 {
   overflow: visible;
 }
 
-/* 左右の星 */
-.character-page.rei-page .frame-star {
-  position: absolute;
-  top: 50%;
-  width: 18px;
-  height: 18px;
-  transform: translateY(-50%);
-  z-index: 5;
-}
-
-.character-page.rei-page .frame-star::before,
-.character-page.rei-page .frame-star::after {
-  content: "";
-  position: absolute;
-  inset: 50% auto auto 50%;
-  background: rgba(181, 139, 59, 0.9);
-  transform: translate(-50%, -50%);
-}
-
-.character-page.rei-page .frame-star::before {
-  width: 18px;
-  height: 1px;
-}
-
-.character-page.rei-page .frame-star::after {
-  width: 1px;
-  height: 18px;
-}
-
-.character-page.rei-page .frame-star--left {
-  left: -9px;
-}
-
-.character-page.rei-page .frame-star--right {
-  right: -9px;
-}
 /* ここまで、今まで追加したレイ用CSSがある */
 
 /* =========================================================
