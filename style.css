@@ -875,3 +875,40 @@ h1 {
   letter-spacing: 0.08em;
   color: rgba(32, 34, 42, 0.72);
 }
+/* ==============================
+   Character Page Layout Fix
+   Concept / Profile alignment
+============================== */
+
+.character-page {
+  overflow-x: hidden;
+}
+
+.character-concept,
+.character-profile {
+  width: 100%;
+}
+
+.character-concept__inner,
+.character-profile__inner {
+  width: calc(100% - 160px);
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 見出しの横位置を統一 */
+.character-concept .section-heading,
+.character-profile .section-heading {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Concept本文も同じ基準幅の中で中央に置く */
+.concept-statement {
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
