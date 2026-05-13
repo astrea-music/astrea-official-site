@@ -598,10 +598,12 @@ h1 {
   margin-bottom: 12px;
 }
 
-.world-panel {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px;
+.world-panel > div {
+  padding: 30px;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.78), rgba(241, 243, 248, 0.62)),
+    #fff;
 }
 
 .world-panel > div {
