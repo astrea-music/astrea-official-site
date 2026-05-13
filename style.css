@@ -1331,9 +1331,6 @@ h1 {
     linear-gradient(90deg, rgba(181,139,59,0.65), rgba(181,139,59,0.65)) right 10px bottom 10px / 32px 1px no-repeat,
     linear-gradient(180deg, rgba(181,139,59,0.65), rgba(181,139,59,0.65)) right 10px bottom 10px / 1px 32px no-repeat,
 
-    radial-gradient(circle at left center, rgba(181,139,59,0.95) 0 2px, transparent 3px),
-    radial-gradient(circle at right center, rgba(181,139,59,0.95) 0 2px, transparent 3px),
-
     linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.9),
