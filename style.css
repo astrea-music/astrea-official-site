@@ -803,18 +803,11 @@ h1 {
    Character Concept Section
 ============================== */
 
-.character-concept {
-  padding: 112px 0 128px;
-  background:
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.96) 0%,
-      rgba(250, 250, 247, 0.94) 100%
-    );
-}
-
-.character-concept__inner {
-  width: min(100% - 80px, 1080px);
+.character-section__inner,
+.character-concept__inner,
+.character-profile__inner {
+  width: calc(100% - 160px);
+  max-width: 1080px;
   margin: 0 auto;
 }
 
