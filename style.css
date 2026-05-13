@@ -2114,3 +2114,30 @@ h1 {
     white-space: normal;
   }
 }
+/* =========================================================
+   REI World / Lunavia Background
+   05 World背景にルナヴィア画像を敷く
+========================================================= */
+
+.character-page.rei-page .world-panel {
+  width: 100% !important;
+  max-width: none !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(251, 250, 247, 0.88),
+      rgba(251, 250, 247, 0.82)
+    ),
+    url("../images/lunavia-bg.png") center / cover no-repeat !important;
+}
+.character-page.rei-page .world-panel > div {
+  background: rgba(255, 255, 255, 0.86) !important;
+  backdrop-filter: blur(2px);
+}
+.character-page.rei-page .world-panel {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
