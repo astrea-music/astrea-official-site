@@ -1010,11 +1010,9 @@ h1 {
 
 .character-page.rei-page .section-heading::before {
   content: "✦";
-  order: 4;
-  color: rgba(181, 139, 59, 0.72);
-  font-size: 13px;
-  line-height: 1;
-  transform: translateY(-8px);
+  color: rgba(181, 139, 59, 0.82);
+  font-size: 15px;
+  transform: translateY(-4px);
 }
 
 .character-page.rei-page .section-number {
