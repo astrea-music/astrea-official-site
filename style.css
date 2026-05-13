@@ -1540,3 +1540,17 @@ h1 {
 .character-page.rei-page .frame-star--right {
   right: -9px;
 }
+/* ここまで、今まで追加したレイ用CSSがある */
+
+/* =========================================================
+   REI Concept Box Fine Tune
+   Concept枠の余白を少し締める
+========================================================= */
+
+.character-page.rei-page .statement-panel {
+  padding: 36px 56px !important;
+}
+
+.character-page.rei-page .statement-panel p {
+  line-height: 1.95;
+}
