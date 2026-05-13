@@ -1741,3 +1741,140 @@ h1 {
     padding: 32px 24px;
   }
 }
+/* =========================================================
+   REI MUSIC CARDS FORCE STYLE
+   04 Music 強制反映版
+========================================================= */
+
+.character-page.rei-page .song-grid {
+  position: relative !important;
+  overflow: visible !important;
+
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 28px !important;
+
+  padding: 38px 42px !important;
+  margin-top: 0 !important;
+
+  border: 1px solid #b58b3b !important;
+  background: rgba(255, 255, 255, 0.86) !important;
+
+  box-shadow:
+    0 22px 50px rgba(7, 21, 58, 0.08),
+    inset 0 0 0 8px rgba(255, 255, 255, 0.9),
+    inset 0 0 0 9px rgba(181, 139, 59, 0.32) !important;
+}
+
+/* 外枠の内側ライン */
+.character-page.rei-page .song-grid::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 10px !important;
+  border: 1px solid rgba(181, 139, 59, 0.34) !important;
+  pointer-events: none !important;
+  z-index: 1 !important;
+}
+
+/* 外枠の右星 */
+.character-page.rei-page .song-grid::after {
+  content: "✦" !important;
+  position: absolute !important;
+  top: 50% !important;
+  right: -14px !important;
+  transform: translateY(-50%) !important;
+  color: #b58b3b !important;
+  font-size: 24px !important;
+  line-height: 1 !important;
+  z-index: 20 !important;
+  background: #fbfaf7 !important;
+  padding: 2px !important;
+}
+
+/* 各曲カード */
+.character-page.rei-page .song-card {
+  position: relative !important;
+  z-index: 2 !important;
+
+  min-height: 210px !important;
+  padding: 36px 28px 30px !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  text-align: center !important;
+
+  border: 1px solid rgba(181, 139, 59, 0.42) !important;
+  background: rgba(255, 255, 255, 0.78) !important;
+
+  box-shadow:
+    0 12px 28px rgba(7, 21, 58, 0.045),
+    inset 0 0 0 1px rgba(181, 139, 59, 0.16) !important;
+}
+
+/* カード内側ライン */
+.character-page.rei-page .song-card::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 8px !important;
+  border: 1px solid rgba(181, 139, 59, 0.2) !important;
+  pointer-events: none !important;
+}
+
+/* カード上部の星 */
+.character-page.rei-page .song-card::after {
+  content: "✦" !important;
+  position: absolute !important;
+  top: -11px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  color: #b58b3b !important;
+  font-size: 18px !important;
+  background: #fbfaf7 !important;
+  padding: 0 7px !important;
+  line-height: 1 !important;
+}
+
+/* ラベル */
+.character-page.rei-page .song-label {
+  margin: 0 0 14px !important;
+  color: #b58b3b !important;
+  font-size: 11px !important;
+  line-height: 1 !important;
+  letter-spacing: 0.2em !important;
+  text-transform: uppercase !important;
+  text-align: center !important;
+}
+
+/* 曲タイトル */
+.character-page.rei-page .song-card h3 {
+  margin: 0 0 16px !important;
+  color: rgba(7, 21, 58, 0.94) !important;
+  font-family: "Times New Roman", "Yu Mincho", "YuMincho", serif !important;
+  font-size: 24px !important;
+  font-weight: 400 !important;
+  line-height: 1.35 !important;
+  letter-spacing: 0.1em !important;
+  text-align: center !important;
+}
+
+/* 曲説明 */
+.character-page.rei-page .song-card p:not(.song-label) {
+  margin: 0 !important;
+  color: rgba(7, 21, 58, 0.72) !important;
+  font-size: 13px !important;
+  line-height: 1.9 !important;
+  letter-spacing: 0.04em !important;
+  text-align: center !important;
+}
+
+/* hover */
+.character-page.rei-page .song-card:hover {
+  transform: translateY(-5px) !important;
+  border-color: rgba(181, 139, 59, 0.76) !important;
+  box-shadow:
+    0 18px 42px rgba(7, 21, 58, 0.1),
+    inset 0 0 0 1px rgba(181, 139, 59, 0.22) !important;
+}
