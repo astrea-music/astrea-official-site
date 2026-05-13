@@ -598,20 +598,124 @@ h1 {
   margin-bottom: 12px;
 }
 
-.world-panel > div {
-  padding: 30px;
-  border: 1px solid var(--line);
+/* =========================================================
+   REI WORLD PANEL FINAL
+   05 World / Lunavia：外枠＋中カード
+========================================================= */
+
+.character-page.rei-page .world-panel {
+  position: relative;
+  overflow: visible;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+
+  padding: 34px 38px;
+
+  border: 1px solid rgba(181, 139, 59, 0.68);
+
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.78), rgba(241, 243, 248, 0.62)),
-    #fff;
+    linear-gradient(90deg, rgba(181,139,59,0.62), rgba(181,139,59,0.62)) left 12px top 12px / 42px 1px no-repeat,
+    linear-gradient(180deg, rgba(181,139,59,0.62), rgba(181,139,59,0.62)) left 12px top 12px / 1px 42px no-repeat,
+
+    linear-gradient(90deg, rgba(181,139,59,0.62), rgba(181,139,59,0.62)) right 12px top 12px / 42px 1px no-repeat,
+    linear-gradient(180deg, rgba(181,139,59,0.62), rgba(181,139,59,0.62)) right 12px top 12px / 1px 42px no-repeat,
+
+    linear-gradient(90deg, rgba(181,139,59,0.62), rgba(181,139,59,0.62)) left 12px bottom 12px / 42px 1px no-repeat,
+    linear-gradient(180deg, rgba(181,139,59,0.62), rgba(181,139,59,0.62)) left 12px bottom 12px / 1px 42px no-repeat,
+
+    linear-gradient(90deg, rgba(181,139,59,0.62), rgba(181,139,59,0.62)) right 12px bottom 12px / 42px 1px no-repeat,
+    linear-gradient(180deg, rgba(181,139,59,0.62), rgba(181,139,59,0.62)) right 12px bottom 12px / 1px 42px no-repeat,
+
+    rgba(255, 255, 255, 0.86);
+
+  box-shadow:
+    0 22px 50px rgba(7, 21, 58, 0.08),
+    inset 0 0 0 8px rgba(255, 255, 255, 0.9),
+    inset 0 0 0 9px rgba(181, 139, 59, 0.30);
 }
 
-.world-panel > div {
-  padding: 30px;
-  border: 1px solid var(--line);
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.78), rgba(241, 243, 248, 0.62)),
-    #fff;
+.character-page.rei-page .world-panel > div {
+  position: relative;
+
+  min-height: 170px;
+  padding: 34px 32px 30px;
+
+  border: 1px solid rgba(181, 139, 59, 0.34);
+  background: rgba(255, 255, 255, 0.78);
+
+  box-shadow:
+    0 10px 24px rgba(7, 21, 58, 0.04),
+    inset 0 0 0 1px rgba(181, 139, 59, 0.16);
+}
+
+/* 中カードの内側細枠 */
+.character-page.rei-page .world-panel > div::before {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border: 1px solid rgba(181, 139, 59, 0.18);
+  pointer-events: none;
+}
+
+/* LUNAVIA / LANDMARK ラベル */
+.character-page.rei-page .world-panel .artist-role {
+  margin: 0 0 10px;
+  color: rgba(181, 139, 59, 0.9);
+  font-family: "Times New Roman", "Yu Mincho", "YuMincho", serif;
+  font-size: 11px;
+  line-height: 1;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+/* 見出し */
+.character-page.rei-page .world-panel h3 {
+  margin: 0 0 14px;
+  color: rgba(7, 21, 58, 0.92);
+  font-family: "Times New Roman", "Yu Mincho", "YuMincho", serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: 0.12em;
+}
+
+/* 本文 */
+.character-page.rei-page .world-panel p:not(.artist-role) {
+  margin: 0;
+  color: rgba(7, 21, 58, 0.74);
+  font-family: "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", serif;
+  font-size: 14px;
+  line-height: 1.95;
+  letter-spacing: 0.04em;
+}
+
+/* hover */
+.character-page.rei-page .world-panel > div:hover {
+  transform: translateY(-4px);
+  border-color: rgba(181, 139, 59, 0.62);
+  box-shadow:
+    0 16px 36px rgba(7, 21, 58, 0.08),
+    inset 0 0 0 1px rgba(181, 139, 59, 0.22);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+/* スマホ対応 */
+@media (max-width: 900px) {
+  .character-page.rei-page .world-panel {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 30px 24px;
+  }
+
+  .character-page.rei-page .world-panel > div {
+    min-height: 150px;
+    padding: 32px 24px;
+  }
 }
 
 .if-entry-panel {
