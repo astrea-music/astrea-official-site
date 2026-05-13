@@ -1,13 +1,16 @@
 :root {
-  --navy: #07153a;
-  --navy-soft: #16264f;
-  --gold: #b58b3b;
-  --line: rgba(7, 21, 58, 0.18);
-  --paper: #fbfaf7;
-  --mist: #f1f3f8;
-  --text: #10172f;
-}
+  --color-navy: #071735;
+  --color-gold: #b89b4f;
 
+  --page-max: 1080px;
+  --page-gutter: 80px;
+  --navy: #071735;
+  --gold: #b89b4f;
+  --text-main: rgba(7, 23, 53, 0.82);
+  --text-sub: rgba(7, 23, 53, 0.54);
+  --line-soft: rgba(7, 23, 53, 0.10);
+  --bg-base: #fbfaf7;
+}
 * {
   box-sizing: border-box;
 }
