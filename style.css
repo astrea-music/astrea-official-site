@@ -1322,3 +1322,104 @@ h1 {
     border-bottom: none;
   }
 }
+/* =========================================================
+   REI DETAIL PAGE FRAME POLISH
+   枠のリッチ感を少し強化
+   ========================================================= */
+
+/* Concept / Voice BOX の存在感を少し上げる */
+.character-page.rei-page .statement-panel,
+.character-page.rei-page .sound-panel {
+  padding: 46px 64px;
+  border-color: rgba(181, 139, 59, 0.48);
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.82),
+      rgba(251, 250, 247, 0.68)
+    );
+  box-shadow:
+    0 20px 52px rgba(7, 21, 58, 0.055),
+    inset 0 0 0 1px rgba(181, 139, 59, 0.20);
+}
+
+/* 内側のダブルラインを少し見えるように */
+.character-page.rei-page .statement-panel::before,
+.character-page.rei-page .sound-panel::before {
+  inset: 8px;
+  border-color: rgba(181, 139, 59, 0.28);
+}
+
+/* 右側の星アクセントを強化 */
+.character-page.rei-page .statement-panel::after,
+.character-page.rei-page .sound-panel::after {
+  content: "✦";
+  right: -12px;
+  font-size: 20px;
+  color: rgba(181, 139, 59, 0.82);
+}
+
+/* 左側の星アクセントを安定表示 */
+.character-page.rei-page .statement-panel > p:first-child::before,
+.character-page.rei-page .sound-panel > p:first-child::before {
+  content: "✦";
+  position: absolute;
+  top: 50%;
+  left: -12px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: rgba(181, 139, 59, 0.82);
+  z-index: 3;
+}
+
+/* 四隅に小さな角装飾 */
+.character-page.rei-page .statement-panel {
+  overflow: visible;
+}
+
+.character-page.rei-page .statement-panel .corner,
+.character-page.rei-page .sound-panel .corner {
+  display: none;
+}
+
+/* HTML追加なしで角を表現するため、背景グラデーションで角装飾 */
+.character-page.rei-page .statement-panel,
+.character-page.rei-page .sound-panel {
+  background:
+    linear-gradient(90deg, rgba(181,139,59,0.55), rgba(181,139,59,0.55)) left 8px top 8px / 24px 1px no-repeat,
+    linear-gradient(180deg, rgba(181,139,59,0.55), rgba(181,139,59,0.55)) left 8px top 8px / 1px 24px no-repeat,
+
+    linear-gradient(90deg, rgba(181,139,59,0.55), rgba(181,139,59,0.55)) right 8px top 8px / 24px 1px no-repeat,
+    linear-gradient(180deg, rgba(181,139,59,0.55), rgba(181,139,59,0.55)) right 8px top 8px / 1px 24px no-repeat,
+
+    linear-gradient(90deg, rgba(181,139,59,0.55), rgba(181,139,59,0.55)) left 8px bottom 8px / 24px 1px no-repeat,
+    linear-gradient(180deg, rgba(181,139,59,0.55), rgba(181,139,59,0.55)) left 8px bottom 8px / 1px 24px no-repeat,
+
+    linear-gradient(90deg, rgba(181,139,59,0.55), rgba(181,139,59,0.55)) right 8px bottom 8px / 24px 1px no-repeat,
+    linear-gradient(180deg, rgba(181,139,59,0.55), rgba(181,139,59,0.55)) right 8px bottom 8px / 1px 24px no-repeat,
+
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.82),
+      rgba(251, 250, 247, 0.68)
+    );
+}
+
+/* 見出し右端の星を少し画像寄せ */
+.character-page.rei-page .section-heading::before {
+  content: "✦";
+  color: rgba(181, 139, 59, 0.82);
+  font-size: 15px;
+  transform: translateY(-8px);
+}
+
+/* 見出しの線を少し金寄りに */
+.character-page.rei-page .section-heading::after {
+  background: linear-gradient(
+    90deg,
+    rgba(181, 139, 59, 0.55) 0%,
+    rgba(181, 139, 59, 0.28) 48%,
+    rgba(181, 139, 59, 0.10) 82%,
+    transparent 100%
+  );
+}
