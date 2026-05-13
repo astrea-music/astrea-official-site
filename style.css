@@ -1708,4 +1708,92 @@ h1 {
     min-width: 180px;
   }
 }
+/* =========================================================
+   REI Music Thumbnail Link
+   サムネイルをYouTube導線にする
+========================================================= */
 
+.character-page.rei-page .song-card.song-card--media {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  gap: 26px;
+  align-items: stretch;
+  text-align: left;
+}
+
+.character-page.rei-page .song-card__thumb {
+  position: relative;
+  display: block;
+  overflow: hidden;
+
+  border: 1px solid rgba(181, 139, 59, 0.34);
+  background: rgba(7, 21, 58, 0.08);
+}
+
+.character-page.rei-page .song-card__thumb img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+.character-page.rei-page .song-card__play {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(7, 21, 58, 0.58);
+  color: #fff;
+
+  font-family: "Times New Roman", "Yu Mincho", "YuMincho", serif;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.character-page.rei-page .song-card__thumb:hover img {
+  transform: scale(1.04);
+  opacity: 0.82;
+}
+
+.character-page.rei-page .song-card__thumb:hover .song-card__play {
+  opacity: 1;
+}
+
+.character-page.rei-page .song-card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+}
+
+.character-page.rei-page .song-card__body .song-label {
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.character-page.rei-page .song-card__body h3 {
+  margin-bottom: 16px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.character-page.rei-page .song-description {
+  margin: 0;
+  color: rgba(7, 21, 58, 0.72);
+  font-size: 14px;
+  line-height: 1.95;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+
+/* 既存のListen on YouTubeテキストリンクを使わない場合 */
+.character-page.rei-page .youtube-link {
+  display: none;
+}
