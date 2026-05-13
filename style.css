@@ -1554,3 +1554,14 @@ h1 {
 .character-page.rei-page .statement-panel p {
   line-height: 1.95;
 }
+/* =========================================================
+   REI Profile Fine Tune
+========================================================= */
+
+.character-page.rei-page .profile-grid {
+  padding: 34px 56px !important;
+}
+
+.character-page.rei-page .profile-grid dl > div {
+  padding: 16px 0 !important;
+}
