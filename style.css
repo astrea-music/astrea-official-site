@@ -1289,27 +1289,6 @@ h1 {
   border-color: rgba(181, 139, 59, 0.28);
 }
 
-/* 右側の星アクセントを強化 */
-.character-page.rei-page .statement-panel::after,
-.character-page.rei-page .sound-panel::after {
-  content: "✦";
-  right: -12px;
-  font-size: 20px;
-  color: rgba(181, 139, 59, 0.82);
-}
-
-/* 左側の星アクセントを安定表示 */
-.character-page.rei-page .statement-panel > p:first-child::before,
-.character-page.rei-page .sound-panel > p:first-child::before {
-  content: "✦";
-  position: absolute;
-  top: 50%;
-  left: -12px;
-  transform: translateY(-50%);
-  font-size: 20px;
-  color: rgba(181, 139, 59, 0.82);
-  z-index: 3;
-}
 
 /* 四隅に小さな角装飾 */
 .character-page.rei-page .statement-panel {
