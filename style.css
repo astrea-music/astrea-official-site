@@ -1878,3 +1878,66 @@ h1 {
     0 18px 42px rgba(7, 21, 58, 0.1),
     inset 0 0 0 1px rgba(181, 139, 59, 0.22) !important;
 }
+/* =========================================================
+   REI MUSIC STAR REFINEMENT
+   雑に見える文字星を、細い光のアクセントに変更
+========================================================= */
+
+/* Music外枠の右星を細い光に変更 */
+.character-page.rei-page .song-grid::after {
+  content: "" !important;
+  position: absolute !important;
+  top: 50% !important;
+  right: -7px !important;
+  width: 14px !important;
+  height: 14px !important;
+  transform: translateY(-50%) !important;
+  background:
+    linear-gradient(90deg, transparent 0 6px, #b58b3b 6px 8px, transparent 8px 14px),
+    linear-gradient(180deg, transparent 0 6px, #b58b3b 6px 8px, transparent 8px 14px) !important;
+  padding: 0 !important;
+  z-index: 20 !important;
+}
+
+/* Music外枠の左星を細い光に変更 */
+.character-page.rei-page .song-grid::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: -7px !important;
+  width: 14px !important;
+  height: 14px !important;
+  transform: translateY(-50%) !important;
+  background:
+    linear-gradient(90deg, transparent 0 6px, #b58b3b 6px 8px, transparent 8px 14px),
+    linear-gradient(180deg, transparent 0 6px, #b58b3b 6px 8px, transparent 8px 14px) !important;
+  padding: 0 !important;
+  z-index: 20 !important;
+}
+
+/* カード上部の星も細い光に変更 */
+.character-page.rei-page .song-card::after {
+  content: "" !important;
+  position: absolute !important;
+  top: -8px !important;
+  left: 50% !important;
+  width: 14px !important;
+  height: 14px !important;
+  transform: translateX(-50%) !important;
+  background:
+    linear-gradient(90deg, transparent 0 6px, #b58b3b 6px 8px, transparent 8px 14px),
+    linear-gradient(180deg, transparent 0 6px, #b58b3b 6px 8px, transparent 8px 14px) !important;
+  padding: 0 !important;
+  z-index: 20 !important;
+}
+
+/* 星の背景白抜きを消して自然にする */
+.character-page.rei-page .song-grid::before,
+.character-page.rei-page .song-grid::after,
+.character-page.rei-page .song-card::after {
+  box-shadow: none !important;
+}
+/* カード上の星を消す場合 */
+.character-page.rei-page .song-card::after {
+  display: none !important;
+}
