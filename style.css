@@ -800,14 +800,22 @@ h1 {
 }
 
 /* ==============================
-   Character Concept Section
+   Character Page Layout Fix
 ============================== */
 
-.character-section__inner,
-.character-concept__inner,
-.character-profile__inner {
+.character-concept__inner {
   width: calc(100% - 160px);
   max-width: 1080px;
+  margin: 0 auto;
+}
+
+.character-concept .section-heading {
+  width: 100%;
+}
+
+.concept-statement {
+  width: 100%;
+  max-width: 900px;
   margin: 0 auto;
 }
 
