@@ -795,6 +795,9 @@ h1 {
     height: 34px;
   }
 }
+/* ==============================
+  section-divider
+   ============================== */
 .section-divider {
   display: flex;
   align-items: center;
