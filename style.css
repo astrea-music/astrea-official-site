@@ -1208,35 +1208,6 @@ h1 {
   border-bottom: none;
 }
 
-/* 小さな菱形アクセント */
-.character-page.rei-page .profile-grid dl > div::before {
-  content: "◆";
-  position: absolute;
-  left: -14px;
-  top: 50%;
-  transform: translateY(-50%) scale(0.42);
-  color: rgba(181, 139, 59, 0.74);
-  line-height: 1;
-}
-
-.character-page.rei-page .profile-grid dt {
-  margin: 0;
-  color: rgba(7, 21, 58, 0.88);
-  font-family: "Times New Roman", "Yu Mincho", "YuMincho", serif;
-  font-size: 15px;
-  line-height: 1.4;
-  letter-spacing: 0.08em;
-  text-transform: none;
-}
-
-.character-page.rei-page .profile-grid dd {
-  margin: 0;
-  color: rgba(7, 21, 58, 0.72);
-  font-family: "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", serif;
-  font-size: 14px;
-  line-height: 1.8;
-  letter-spacing: 0.05em;
-}
 
 /* ------------------------------
    スマホ・狭い画面対応
