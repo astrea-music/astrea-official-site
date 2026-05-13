@@ -1565,3 +1565,179 @@ h1 {
 .character-page.rei-page .profile-grid dl > div {
   padding: 16px 0 !important;
 }
+/* =========================================================
+   REI MUSIC CARDS
+   04 Music：カードデザイン
+========================================================= */
+
+/* Music全体の外枠 */
+.character-page.rei-page .song-grid {
+  position: relative;
+  overflow: visible;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+
+  padding: 34px 42px;
+
+  border: 1px solid rgba(181, 139, 59, 0.72);
+  background:
+    linear-gradient(90deg, #b58b3b, #b58b3b) left 12px top 12px / 42px 1px no-repeat,
+    linear-gradient(180deg, #b58b3b, #b58b3b) left 12px top 12px / 1px 42px no-repeat,
+
+    linear-gradient(90deg, #b58b3b, #b58b3b) right 12px top 12px / 42px 1px no-repeat,
+    linear-gradient(180deg, #b58b3b, #b58b3b) right 12px top 12px / 1px 42px no-repeat,
+
+    linear-gradient(90deg, #b58b3b, #b58b3b) left 12px bottom 12px / 42px 1px no-repeat,
+    linear-gradient(180deg, #b58b3b, #b58b3b) left 12px bottom 12px / 1px 42px no-repeat,
+
+    linear-gradient(90deg, #b58b3b, #b58b3b) right 12px bottom 12px / 42px 1px no-repeat,
+    linear-gradient(180deg, #b58b3b, #b58b3b) right 12px bottom 12px / 1px 42px no-repeat,
+
+    rgba(255, 255, 255, 0.86);
+
+  box-shadow:
+    0 22px 50px rgba(7, 21, 58, 0.08),
+    inset 0 0 0 8px rgba(255, 255, 255, 0.9),
+    inset 0 0 0 9px rgba(181, 139, 59, 0.32);
+}
+
+/* Music外枠の右星 */
+.character-page.rei-page .song-grid::after {
+  content: "✦";
+  position: absolute;
+  top: 50%;
+  right: -14px;
+  transform: translateY(-50%);
+  color: #b58b3b;
+  font-size: 24px;
+  line-height: 1;
+  z-index: 20;
+  background: #fbfaf7;
+  padding: 2px;
+}
+
+/* Music外枠の左星 */
+.character-page.rei-page .song-grid::before {
+  content: "✦";
+  position: absolute;
+  top: 50%;
+  left: -14px;
+  transform: translateY(-50%);
+  color: #b58b3b;
+  font-size: 24px;
+  line-height: 1;
+  z-index: 20;
+  background: #fbfaf7;
+  padding: 2px;
+}
+
+/* 各曲カード */
+.character-page.rei-page .song-card {
+  position: relative;
+  min-height: 210px;
+  padding: 34px 28px 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  border: 1px solid rgba(181, 139, 59, 0.34);
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.9),
+      rgba(251, 250, 247, 0.72)
+    );
+
+  box-shadow:
+    0 12px 28px rgba(7, 21, 58, 0.045),
+    inset 0 0 0 1px rgba(181, 139, 59, 0.16);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+/* カード内側の細い枠 */
+.character-page.rei-page .song-card::before {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border: 1px solid rgba(181, 139, 59, 0.18);
+  pointer-events: none;
+}
+
+/* カード上部の小さい星 */
+.character-page.rei-page .song-card::after {
+  content: "✦";
+  position: absolute;
+  top: -11px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(181, 139, 59, 0.86);
+  font-size: 18px;
+  background: #fbfaf7;
+  padding: 0 6px;
+  line-height: 1;
+}
+
+/* hover */
+.character-page.rei-page .song-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(181, 139, 59, 0.72);
+  box-shadow:
+    0 18px 42px rgba(7, 21, 58, 0.1),
+    inset 0 0 0 1px rgba(181, 139, 59, 0.22);
+}
+
+/* ラベル */
+.character-page.rei-page .song-label {
+  margin: 0 0 12px;
+  color: rgba(181, 139, 59, 0.9);
+  font-family: "Times New Roman", "Yu Mincho", "YuMincho", serif;
+  font-size: 11px;
+  line-height: 1;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* 曲タイトル */
+.character-page.rei-page .song-card h3 {
+  margin: 0 0 16px;
+  color: rgba(7, 21, 58, 0.92);
+  font-family: "Times New Roman", "Yu Mincho", "YuMincho", serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: 0.1em;
+}
+
+/* 曲説明 */
+.character-page.rei-page .song-card p:not(.song-label) {
+  margin: 0;
+  color: rgba(7, 21, 58, 0.72);
+  font-family: "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", serif;
+  font-size: 13px;
+  line-height: 1.9;
+  letter-spacing: 0.04em;
+}
+
+/* スマホ対応 */
+@media (max-width: 900px) {
+  .character-page.rei-page .song-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 30px 24px;
+  }
+
+  .character-page.rei-page .song-card {
+    min-height: 190px;
+    padding: 32px 24px;
+  }
+}
