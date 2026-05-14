@@ -2143,3 +2143,23 @@ h1 {
   border: 5px solid red !important;
   background: url("images/lunavia-bg.png") center / cover no-repeat !important;
 }
+.character-page.rei-page .world-panel {
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  box-sizing: border-box !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(251, 250, 247, 0.58),
+      rgba(251, 250, 247, 0.50)
+    ),
+    url("images/lunavia-bg.png") center / cover no-repeat !important;
+}
+
+.character-page.rei-page .world-panel > div {
+  background: rgba(255, 255, 255, 0.78) !important;
+  backdrop-filter: blur(2px);
+}
