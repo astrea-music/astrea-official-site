@@ -1947,3 +1947,24 @@ h1 {
   border: 1px solid rgba(181, 139, 59, 0.18) !important;
   pointer-events: none !important;
 }
+/* =========================================================
+   REI World Section Width Force
+   05 World / Lunavia の親セクションごと幅を揃える
+========================================================= */
+
+/* world-panelを含むセクション自体を他セクションと同じ幅にする */
+.character-page.rei-page .character-section:has(.world-panel) {
+  width: min(100% - 80px, 1080px) !important;
+  max-width: 1080px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* World枠を親幅いっぱいに広げる */
+.character-page.rei-page .character-section:has(.world-panel) .world-panel {
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  box-sizing: border-box !important;
+}
