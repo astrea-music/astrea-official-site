@@ -89,13 +89,14 @@ a {
 }
 
 .hero {
-  padding: 40px 32px 80px;
+  padding: 40px 24px 80px;
   background: #fcfbf8;
 }
 
 .hero-visual {
   position: relative;
-  max-width: 1400px;
+  width: 100%;
+  max-width: 1520px;
   margin: 0 auto;
   overflow: hidden;
 }
