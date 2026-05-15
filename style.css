@@ -1907,3 +1907,36 @@ h1 {
     padding: 32px 24px !important;
   }
 }
+/* ==============================
+   Brand Statement Frame
+   ASTREA本体用
+============================== */
+
+.brand-statement {
+  width: calc(100% - 128px);
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 44px 56px;
+  border: 1px solid rgba(7, 23, 53, 0.14);
+  background: rgba(255, 255, 255, 0.38);
+  position: relative;
+}
+
+.brand-statement::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 56px;
+  width: 96px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.brand-statement p {
+  margin: 0;
+  max-width: 920px;
+  font-size: 15px;
+  line-height: 2.1;
+  letter-spacing: 0.08em;
+  color: rgba(7, 23, 53, 0.78);
+}
