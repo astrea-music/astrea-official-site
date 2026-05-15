@@ -1934,9 +1934,11 @@ h1 {
 
 .brand-statement p {
   margin: 0;
-  max-width: 980px;
+  max-width: 1080px;
   font-size: 15px;
   line-height: 2.15;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   color: rgba(7, 23, 53, 0.78);
+  line-break: strict;
+  word-break: normal;
 }
