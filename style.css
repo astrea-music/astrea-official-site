@@ -1944,18 +1944,23 @@ h1 {
 }
 
 @media (max-width: 700px) {
-  .about .text-panel {
+  .brand-statement {
     width: calc(100% - 32px);
     max-width: none;
-    padding: 44px 26px;
+    padding: 42px 24px;
   }
 
-  .about .text-panel p {
+  .brand-statement::before {
+    left: 24px;
+    width: 64px;
+  }
+
+  .brand-statement p {
     max-width: none;
     width: auto;
     font-size: 15px;
     line-height: 2.05;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
     text-align: left;
   }
 }
