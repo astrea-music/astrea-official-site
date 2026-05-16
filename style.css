@@ -1942,3 +1942,20 @@ h1 {
   line-break: strict;
   word-break: normal;
 }
+
+@media (max-width: 700px) {
+  .about .text-panel {
+    width: calc(100% - 32px);
+    max-width: none;
+    padding: 44px 26px;
+  }
+
+  .about .text-panel p {
+    max-width: none;
+    width: auto;
+    font-size: 15px;
+    line-height: 2.05;
+    letter-spacing: 0.04em;
+    text-align: left;
+  }
+}
